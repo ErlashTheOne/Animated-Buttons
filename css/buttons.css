@@ -1,0 +1,1195 @@
+/**
+ * BUTTONS
+ */
+
+.button{
+    letter-spacing: 0;
+    padding: 19px 58px;
+    opacity: 1;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 0;
+    position: relative;
+    text-transform: uppercase;
+    opacity: 1;
+    line-height: 20px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+.button:focus {
+    outline: none!important;
+}
+
+.button span {
+    z-index: 1000;
+}
+
+/* Button up-down
+============== */
+
+
+.button--up-down{
+    color: #e41025;
+    background: transparent;
+    border: 4px solid #e41025;
+}
+
+.button--up-down:before {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.button--up-down:before{
+    background: #e41025;
+}
+
+.button--up-down:hover{
+    color: #ffffff;
+}
+
+.button--up-down:hover:before, .button--up-down:active:before {
+    height: 100%;
+}
+
+/* Button down-up
+============== */
+
+
+.button--down-up{
+    color: #e41025;
+    background: transparent;
+    border: 4px solid #e41025;
+}
+
+.button--down-up:before {
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.button--down-up:before{
+    background: #e41025;
+}
+
+.button--down-up:hover{
+    color: #ffffff;
+}
+
+.button--down-up:hover:before, .button--down-up:active:before {
+    height: 100%;
+}
+
+
+/* Button left-right
+============== */
+
+
+.button--left-right{
+    color: #e41025;
+    background: transparent;
+    border: 4px solid #e41025;
+}
+
+.button--left-right:before {
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.button--left-right:before{
+    background: #e41025;
+}
+
+.button--left-right:hover{
+    color: #ffffff;
+}
+
+.button--left-right:hover:before, .button--left-right:active:before {
+    width: 100%;
+}
+
+/* Button right-left
+============== */
+
+
+.button--right-left{
+    color: #e41025;
+    background: transparent;
+    border: 4px solid #e41025;
+}
+
+.button--right-left:before {
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.button--right-left:before{
+    background: #e41025;
+}
+
+.button--right-left:hover{
+    color: #ffffff;
+}
+
+.button--right-left:hover:before, .button--right-left:active:before {
+    width: 100%;
+}
+
+
+
+/* Button close
+============== */
+
+
+.button--close{
+    color: #e41025;
+    background: transparent;
+    border: 4px solid #e41025;
+}
+
+.button--close:after {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--close:before {
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--close:after ,.button--close:before{
+    background: #e41025;
+}
+
+.button--close:hover{
+    color: #ffffff;
+}
+
+.button--close:hover:after, .button--close:active:after, .button--close:hover:before, .button--close:active:before {
+    width: 50%;
+}
+
+
+/* Button tv-off
+============== */
+
+
+.button--tv-off{
+    color: #e41025;
+    background: transparent;
+    border: 4px solid #e41025;
+}
+
+.button--tv-off:after {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--tv-off:before {
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--tv-off:after ,.button--tv-off:before{
+    background: #e41025;
+}
+
+.button--tv-off:hover{
+    color: #ffffff;
+}
+
+.button--tv-off:hover:after, .button--tv-off:active:after, .button--tv-off:hover:before, .button--tv-off:active:before {
+    height: 50%;
+}
+
+
+
+
+/* Button little star wars
+========================== */
+
+
+.button--starwars-mid{
+    color: purple;
+    background: transparent;
+    border: 4px solid purple;
+}
+
+.button--starwars-mid:before {
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 0px solid transparent;
+        border-top: 0px solid purple;
+    border-left: 0px solid purple;
+    border-bottom: 0px solid transparent;
+}
+
+.button--starwars-mid:after {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 0px solid purple;
+        border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid purple;
+}
+
+.button--starwars-mid:hover{
+    color: #ffffff;
+}
+
+.button--starwars-mid:hover:before, .button--starwars-mid:active:before {
+    width: 0; 
+    height: 0; 
+    border-right: 100px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 100px solid purple;
+    border-top: 30px solid purple;
+}
+
+.button--starwars-mid:hover:after, .button--starwars-mid:active:after {
+    width: 0; 
+    height: 0; 
+    border-right: 100px solid purple;
+    border-bottom: 30px solid purple;
+    border-left: 100px solid transparent;
+    border-top: 30px solid transparent;
+}
+
+
+/* Button full star wars
+========================== */
+
+.button--starwars-full{
+    color: #111111;
+    background: transparent;
+    border: 4px solid #111111;
+}
+
+.button--starwars-full:before {
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    transition: all 1.2s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 0px solid transparent;
+        border-top: 0px solid #8c8c8c;
+    border-left: 0px solid #8c8c8c;
+    border-bottom: 0px solid transparent;
+}
+
+.button--starwars-full:after {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 1.8s;
+    -moz-transition: all 1.8s;
+    transition: all 1.8s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 0px solid #111111;
+        border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid #111111;
+}
+
+
+.button--starwars-full:hover{
+    color: #ffffff;
+}
+
+.button--starwars-full:hover:before, .button--starwars-full:active:before {
+    width: 0; 
+    height: 0; 
+    border-right: 100px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 100px solid #8c8c8c;
+    border-top: 30px solid #8c8c8c;
+}
+
+.button--starwars-full:hover:after, .button--starwars-full:active:after {
+    width: 0; 
+    height: 0; 
+    border-right: 100px solid #111111;
+    border-bottom: 30px solid #111111;
+    border-left: 100px solid transparent;
+    border-top: 30px solid transparent;
+}
+
+.button--starwars-full .backspan:before {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 0px solid transparent;
+        border-top: 0px solid transparent;
+    border-left: 0px solid #4d4d4d;
+    border-bottom: 0px solid #4d4d4d;
+}
+
+.button--starwars-full .backspan:after {
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 1.3s;
+    -moz-transition: all 1.3s;
+    transition: all 1.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 0px solid #262626;
+        border-top: 0px solid #262626;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+
+.button--starwars-full:hover .backspan:before, .button--starwars-full:active .backspan:before {
+    width: 0; 
+    height: 0; 
+    border-right: 100px solid transparent;
+    border-bottom: 30px solid #4d4d4d;
+    border-left: 100px solid #4d4d4d;
+    border-top: 30px solid transparent;
+}
+
+.button--starwars-full:hover .backspan:after, .button--starwars-full:active .backspan:after {
+    width: 0; 
+    height: 0; 
+    border-right: 100px solid #262626;
+    border-bottom: 30px solid transparent;
+    border-left: 100px solid transparent;
+    border-top: 30px solid #262626;
+}
+
+/* Button low-poly-google
+========================== */
+
+
+.button--low-poly{
+    color: #111111;
+    background: transparent;
+    border: 4px solid #111111;
+}
+
+.button--low-poly:after {
+    width: 0;
+    height: 50%;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #4384F4;
+}
+
+.button--low-poly:before {
+    width: 50%;
+    height: 0;
+    top: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #EA4334;
+}
+
+.button--low-poly:hover{
+    color: #ffffff;
+}
+
+.button--low-poly:hover:after, .button--low-poly:active:after{
+    width: 50%;
+}
+.button--low-poly:hover:before, .button--low-poly:active:before{
+    height: 50%;
+}
+
+
+.button--low-poly .backspan:before {
+    width: 50%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #F5BB06;
+}
+
+.button--low-poly .backspan:after {
+    width: 0;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #3EA853;
+}
+
+.button--low-poly:hover .backspan:before, .button--low-poly:active .backspan:before {
+    width: 50%;
+    height: 50%;
+}
+
+.button--low-poly:hover .backspan:after, .button--low-poly:active .backspan:after {
+    width: 50%;
+    height: 50%;
+}
+
+
+/* Button low-poly-google
+========================== */
+
+.button--spiral{
+    color: #111111;
+    background: transparent;
+    border: 4px solid #111111;
+}
+
+.button--spiral:after {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #4384F4;
+}
+
+.button--spiral:before {
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #EA4334;
+}
+
+.button--spiral:hover{
+    color: #ffffff;
+}
+
+.button--spiral:hover:after, .button--spiral:active:after{
+    height: 20%;
+    width: 80%;
+}
+.button--spiral:hover:before, .button--spiral:active:before{
+    width: 20%;
+    height: 80%;
+}
+
+.button--spiral .backspan:before {
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #F5BB06;
+}
+
+.button--spiral .backspan:after {
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #3EA853;
+}
+
+.button--spiral:hover .backspan:before, .button--spiral:active .backspan:before {
+    width: 20%;
+    height: 80%;
+}
+
+.button--spiral:hover .backspan:after, .button--spiral:active .backspan:after {
+    width: 80%;
+    height: 20%;
+}
+
+.button--spiral .backspan2:before {
+    width: 0;
+    height: 0;
+    bottom: 50%;
+    left: 50%;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #111111;
+}
+.button--spiral:hover .backspan2:before, .button--spiral:active .backspan2:before {
+    width: 60%;
+    height: 60%;
+
+    bottom: 20%;
+    left: 20%;
+}
+
+
+/* Button rain
+========================== */
+
+.button--rain{
+    color: #0033cc;
+    background: transparent;
+    border: 4px solid #0033cc;
+}
+
+.button--rain:after, .button--rain:before, .button--rain .backspan:before, .button--rain .backspan:after, .button--rain .backspan2:before  {
+    width: 20%;
+    height: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--rain:after{
+    left: 0%;
+    background: #e6f9ff;
+}
+
+.button--rain:before {
+    left: 20%;
+    background: #ccf2ff;
+    transition-delay: 0.1s;
+}
+
+.button--rain .backspan:before{
+    left: 40%;
+    background: #b3ecff;
+    transition-delay: 0.2s;
+}
+.button--rain .backspan:after{
+    left: 60%;
+    background: #99e6ff;
+    transition-delay: 0.3s;
+}
+.button--rain .backspan2:before{
+    left: 80%;
+    background: #80dfff;
+    transition-delay: 0.4s;
+}
+
+
+.button--rain:hover:after, .button--rain:active:after, 
+.button--rain:hover:before, .button--rain:active:before, 
+.button--rain:hover .backspan:before, .button--rain:active .backspan:before, 
+.button--rain:hover .backspan:after, .button--rain:active .backspan:after,
+.button--rain:hover .backspan2:before, .button--rain:active .backspan2:before{
+    height: 100%;
+}
+
+/* Button more rain
+========================== */
+
+.button--more-rain{
+    color: #0033cc;
+    background: transparent;
+    border: 4px solid #0033cc;
+}
+
+.button--more-rain:after, 
+.button--more-rain:before, 
+.button--more-rain .backspan:before, 
+.button--more-rain .backspan:after, 
+.button--more-rain .backspan2:before  {
+    width: 20%;
+    height: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--more-rain:before{
+    left: 0%;
+    background: #e6f9ff;
+}
+
+.button--more-rain:after {
+    left: 20%;
+    background: #ccf2ff;
+    transition-delay: 0.1s;
+}
+
+.button--more-rain .backspan:before{
+    left: 40%;
+    background: #b3ecff;
+    transition-delay: 0.2s;
+}
+.button--more-rain .backspan:after{
+    left: 60%;
+    background: #99e6ff;
+    transition-delay: 0.3s;
+}
+.button--more-rain .backspan2:before{
+    left: 80%;
+    background: #80dfff;
+    transition-delay: 0.4s;
+}
+
+.button--more-rain .backspan2:after, 
+.button--more-rain .backspan3:before, 
+.button--more-rain .backspan3:after, 
+.button--more-rain .backspan4:before, 
+.button--more-rain .backspan4:after {
+    width: 20%;
+    height: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--more-rain .backspan2:after{
+    left: 0%;
+    background: #e6f9ff;
+    transition-delay: 0s;
+}
+.button--more-rain .backspan3:before{
+    left: 20%;
+    background: #ccf2ff;
+    transition-delay: 0.1s;
+}
+.button--more-rain .backspan3:after{
+    left: 40%;
+    background: #b3ecff;
+    transition-delay: 0.2s;
+}
+.button--more-rain .backspan4:before{
+    left: 60%;
+    background: #99e6ff;
+    transition-delay: 0.3s;
+}
+.button--more-rain .backspan4:after{
+    left: 80%;
+    background: #80dfff;
+    transition-delay: 0.4s;
+}
+
+
+.button--more-rain:hover:after, .button--more-rain:active:after, 
+.button--more-rain:hover:before, .button--more-rain:active:before, 
+.button--more-rain:hover .backspan:before, .button--more-rain:active .backspan:before, 
+.button--more-rain:hover .backspan:after, .button--more-rain:active .backspan:after,
+.button--more-rain:hover .backspan2:before, .button--more-rain:active .backspan2:before,
+.button--more-rain:hover .backspan2:after, .button--more-rain:active .backspan2:after,
+.button--more-rain:hover .backspan3:before, .button--more-rain:active .backspan3:before,
+.button--more-rain:hover .backspan3:after, .button--more-rain:active .backspan3:after,
+.button--more-rain:hover .backspan4:before, .button--more-rain:active .backspan4:before,
+.button--more-rain:hover .backspan4:after, .button--more-rain:active .backspan4:after{
+    height: 50%;
+}
+
+/* Button mega rain
+========================== */
+
+.button--mega-rain{
+    color: #0033cc;
+    background: transparent;
+    border: 4px solid #0033cc;
+}
+
+.button--mega-rain:after, 
+.button--mega-rain:before, 
+.button--mega-rain .backspan:before, 
+.button--mega-rain .backspan:after, 
+.button--mega-rain .backspan2:before, 
+.button--mega-rain .backspan2:after , 
+.button--mega-rain .backspan3:before , 
+.button--mega-rain .backspan3:after   {
+    width: 12.5%;
+    height: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--mega-rain:after{
+    left: 0%;
+    background: #e6f9ff;
+    transition-delay: 0s;
+}
+.button--mega-rain:before{
+    left: 12.5%;
+    background: #ccf2ff;
+    transition-delay: 0.1s;
+}
+.button--mega-rain .backspan:after{
+    left: 25%;
+    background: #b3ecff;
+    transition-delay: 0.2s;
+}
+.button--mega-rain .backspan:before{
+    left: 37.5%;
+    background: #99e6ff;
+    transition-delay: 0.3s;
+}
+.button--mega-rain .backspan2:after{
+    left: 50%;
+    background: #80dfff;
+    transition-delay: 0.4s;
+}
+.button--mega-rain .backspan2:before{
+    left: 62.5%;
+    background: #66d9ff;
+    transition-delay: 0.5s;
+}
+.button--mega-rain .backspan3:after{
+    left: 75%;
+    background: #4dd2ff;
+    transition-delay: 0.6s;
+}
+.button--mega-rain .backspan3:before{
+    left: 87.5%;
+    background: #33ccff;
+    transition-delay: 0.7s;
+}
+
+.button--mega-rain .backspan4:before, 
+.button--mega-rain .backspan4:after,
+.button--mega-rain .backspan5:before, 
+.button--mega-rain .backspan5:after,
+.button--mega-rain .backspan6:before, 
+.button--mega-rain .backspan6:after,
+.button--mega-rain .backspan7:before, 
+.button--mega-rain .backspan7:after {
+    width: 12.5%;
+    height: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--mega-rain .backspan4:after{
+    left: 0%;
+    background: #e6f9ff;
+    transition-delay: 0s;
+}
+.button--mega-rain .backspan4:before{
+    left: 12.5%;
+    background: #ccf2ff;
+    transition-delay: 0.1s;
+}
+.button--mega-rain .backspan5:after{
+    left: 25%;
+    background: #b3ecff;
+    transition-delay: 0.2s;
+}
+.button--mega-rain .backspan5:before{
+    left: 37.5%;
+    background: #99e6ff;
+    transition-delay: 0.3s;
+}
+.button--mega-rain .backspan6:after{
+    left: 50%;
+    background: #80dfff;
+    transition-delay: 0.4s;
+}
+.button--mega-rain .backspan6:before{
+    left: 62.5%;
+    background: #66d9ff;
+    transition-delay: 0.5s;
+}
+.button--mega-rain .backspan7:after{
+    left: 75%;
+    background: #4dd2ff;
+    transition-delay: 0.6s;
+}
+.button--mega-rain .backspan7:before{
+    left: 87.5%;
+    background: #33ccff;
+    transition-delay: 0.7s;
+}
+
+
+.button--mega-rain:hover:after, .button--mega-rain:active:after, 
+.button--mega-rain:hover:before, .button--mega-rain:active:before, 
+.button--mega-rain:hover .backspan:before, .button--mega-rain:active .backspan:before, 
+.button--mega-rain:hover .backspan:after, .button--mega-rain:active .backspan:after,
+.button--mega-rain:hover .backspan2:before, .button--mega-rain:active .backspan2:before,
+.button--mega-rain:hover .backspan2:after, .button--mega-rain:active .backspan2:after,
+.button--mega-rain:hover .backspan3:before, .button--mega-rain:active .backspan3:before,
+.button--mega-rain:hover .backspan3:after, .button--mega-rain:active .backspan3:after,
+.button--mega-rain:hover .backspan4:before, .button--mega-rain:active .backspan4:before,
+.button--mega-rain:hover .backspan4:after, .button--mega-rain:active .backspan4:after,
+.button--mega-rain:hover .backspan5:before, .button--mega-rain:active .backspan5:before,
+.button--mega-rain:hover .backspan5:after, .button--mega-rain:active .backspan5:after,
+.button--mega-rain:hover .backspan6:before, .button--mega-rain:active .backspan6:before,
+.button--mega-rain:hover .backspan6:after, .button--mega-rain:active .backspan6:after,
+.button--mega-rain:hover .backspan7:before, .button--mega-rain:active .backspan7:before,
+.button--mega-rain:hover .backspan7:after, .button--mega-rain:active .backspan7:after{
+    height: 50%;
+}
+/* Button divided rain
+========================== */
+
+.button--divided-rain{
+    color: #0033cc;
+    background: transparent;
+    border: 4px solid #0033cc;
+}
+
+.button--divided-rain:after, 
+.button--divided-rain:before, 
+.button--divided-rain .backspan:before, 
+.button--divided-rain .backspan:after, 
+.button--divided-rain .backspan2:before, 
+.button--divided-rain .backspan2:after , 
+.button--divided-rain .backspan3:before , 
+.button--divided-rain .backspan3:after   {
+    width: 12.5%;
+    height: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--divided-rain:after{
+    left: 0%;
+    background: #e6f9ff;
+    transition-delay: 0s;
+}
+.button--divided-rain:before{
+    left: 12.5%;
+    background: #ccf2ff;
+    transition-delay: 0.1s;
+}
+.button--divided-rain .backspan:after{
+    left: 25%;
+    background: #b3ecff;
+    transition-delay: 0.2s;
+}
+.button--divided-rain .backspan:before{
+    left: 37.5%;
+    background: #99e6ff;
+    transition-delay: 0.3s;
+}
+.button--divided-rain .backspan2:after{
+    left: 50%;
+    background: #80dfff;
+    transition-delay: 0.3s;
+}
+.button--divided-rain .backspan2:before{
+    left: 62.5%;
+    background: #66d9ff;
+    transition-delay: 0.2s;
+}
+.button--divided-rain .backspan3:after{
+    left: 75%;
+    background: #4dd2ff;
+    transition-delay: 0.1s;
+}
+.button--divided-rain .backspan3:before{
+    left: 87.5%;
+    background: #33ccff;
+    transition-delay: 0.0s;
+}
+
+.button--divided-rain .backspan4:before, 
+.button--divided-rain .backspan4:after,
+.button--divided-rain .backspan5:before, 
+.button--divided-rain .backspan5:after,
+.button--divided-rain .backspan6:before, 
+.button--divided-rain .backspan6:after,
+.button--divided-rain .backspan7:before, 
+.button--divided-rain .backspan7:after {
+    width: 12.5%;
+    height: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button--divided-rain .backspan4:after{
+    left: 0%;
+    background: #e6f9ff;
+    transition-delay: 0s;
+}
+.button--divided-rain .backspan4:before{
+    left: 12.5%;
+    background: #ccf2ff;
+    transition-delay: 0.1s;
+}
+.button--divided-rain .backspan5:after{
+    left: 25%;
+    background: #b3ecff;
+    transition-delay: 0.2s;
+}
+.button--divided-rain .backspan5:before{
+    left: 37.5%;
+    background: #99e6ff;
+    transition-delay: 0.3s;
+}
+.button--divided-rain .backspan6:after{
+    left: 50%;
+    background: #80dfff;
+    transition-delay: 0.3s;
+}
+.button--divided-rain .backspan6:before{
+    left: 62.5%;
+    background: #66d9ff;
+    transition-delay: 0.2s;
+}
+.button--divided-rain .backspan7:after{
+    left: 75%;
+    background: #4dd2ff;
+    transition-delay: 0.1s;
+}
+.button--divided-rain .backspan7:before{
+    left: 87.5%;
+    background: #33ccff;
+    transition-delay: 0s;
+}
+
+
+.button--divided-rain:hover:after, .button--divided-rain:active:after, 
+.button--divided-rain:hover:before, .button--divided-rain:active:before, 
+.button--divided-rain:hover .backspan:before, .button--divided-rain:active .backspan:before, 
+.button--divided-rain:hover .backspan:after, .button--divided-rain:active .backspan:after,
+.button--divided-rain:hover .backspan2:before, .button--divided-rain:active .backspan2:before,
+.button--divided-rain:hover .backspan2:after, .button--divided-rain:active .backspan2:after,
+.button--divided-rain:hover .backspan3:before, .button--divided-rain:active .backspan3:before,
+.button--divided-rain:hover .backspan3:after, .button--divided-rain:active .backspan3:after,
+.button--divided-rain:hover .backspan4:before, .button--divided-rain:active .backspan4:before,
+.button--divided-rain:hover .backspan4:after, .button--divided-rain:active .backspan4:after,
+.button--divided-rain:hover .backspan5:before, .button--divided-rain:active .backspan5:before,
+.button--divided-rain:hover .backspan5:after, .button--divided-rain:active .backspan5:after,
+.button--divided-rain:hover .backspan6:before, .button--divided-rain:active .backspan6:before,
+.button--divided-rain:hover .backspan6:after, .button--divided-rain:active .backspan6:after,
+.button--divided-rain:hover .backspan7:before, .button--divided-rain:active .backspan7:before,
+.button--divided-rain:hover .backspan7:after, .button--divided-rain:active .backspan7:after{
+    height: 50%;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HEXAGON</title>
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			body{
+				margin: 0;
+				background: black;
+			}
+
+			.header{
+				transition: all 0s;
+			}
+
+			.section {
+				z-index: -2;
+				font-size: 3em;
+				position: relative;
+				width: 100%;
+				height: 100vh;
+			}	
+
+			.centered-container{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.hex {
+			    width: 208px;
+			    height: 120px;
+			    background: white;
+			    position: relative;
+			}
+			.hex:before, .hex:after {
+			    content:"";
+			    border-left: 104px solid transparent;
+			    border-right: 104px solid transparent;
+			    position: absolute;
+			}
+			.hex:before {
+			    top: -59px;
+			    border-bottom: 60px solid white;
+			}
+			.hex:after {
+			    bottom: -59px;
+			    border-top: 60px solid white;
+			}
+			.hex.inner {
+			    background-color:black;
+			    -webkit-transform: scale(.95, .95);
+			    -moz-transform: scale(.95, .95);
+			    transform: scale(.95, .95);
+			    z-index:1;
+			}
+			.hex.inner:before {
+			    border-bottom: 60px solid black;
+			}
+			.hex.inner:after {
+			    border-top: 60px solid black;
+			}
+			.hex.inner2 {
+			    background-color:white;
+			    -webkit-transform: scale(.95, .95);
+			    -moz-transform: scale(.95, .95);
+			    transform: scale(.95, .95);
+			    z-index:2;
+			}
+			.hex.inner2:before {
+			    border-bottom: 60px solid white;
+			}
+			.hex.inner2:after {
+			    border-top: 60px solid white;
+			}
+			.circle.main{
+			    top: -44px;
+			}
+			.circle{
+			    width: 208px;
+			    height: 208px;
+			    position: relative;
+			    border-radius: 50%;
+			    background-color: black;
+			    -webkit-transform: scale(.6, .6);
+			    -moz-transform: scale(.6, .6);
+			    transform: scale(.6, .6);
+			    z-index: 3;
+			}
+			.circle.inner {
+			    background-color:white;
+			    -webkit-transform: scale(.9, .9);
+			    -moz-transform: scale(.9, .9);
+			    transform: scale(.9, .9);
+			    z-index:4;
+			}
+			.equal{
+			    width: 208px;
+			    height: 20px;
+			    position: relative;
+			    background-color: black;
+			    -webkit-transform: scale(1.5, 1.5);
+			    -moz-transform: scale(1.5, 1.5);
+			    transform: scale(1.5, 1.5);
+			    z-index: 5;
+			}
+			.equal.main{
+			    top: 95px;
+			}
+			.equal.inner{
+			    background-color:white;
+			    -webkit-transform: scale(1.1, 0.5);
+			    -moz-transform: scale(1.1, 0.5);
+			    transform: scale(1.1, 0.2);
+			    z-index: 6;
+			}
+			.triangle{
+			    width: 8px;
+			    height: 520px;
+			    position: relative;
+			    background-color: white;
+			    -webkit-transform: scale(1.7, 1.7);
+			    -moz-transform: scale(1.7, 1.7);
+			    z-index: 7;
+			}
+			.triangle-left.main{
+
+			    transform: scale(1.7, 1.7) rotate(5deg);
+			    top: -284px;
+			    left: 60px;
+			}
+			.triangle-right.main{
+
+			    transform: scale(1.7, 1.7) rotate(-5deg);
+			    top: -800px;
+			    left: 138px;
+			}
+			.triangle.inner{
+			    background-color:black;
+			    -webkit-transform: scale(0.9, 0.9);
+			    -moz-transform: scale(0.9, 0.9);
+			    transform: scale(0.5, 1);
+			    z-index: 8;
+			}
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+	</head>
+	<body>
+
+		<header class="header">
+			<div class="wrapper">
+				<div class="menu-left">
+					<a href="./buttons.html"><img src="./assets/images/Erlashtheone.png" style="width: 70px; transform: scaleX(1.5); -webkit-filter: invert(1); filter: invert(1);"></a>
+				</div>
+				<div class="menu-right">
+					<div id="nav-icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
+					<ul>
+						<li><a href="./buttons.html">Botones v1</a></li>
+						<li><a href="./advanced-buttons.html">Botones v2</a></li>
+						<li><a href="./hex.html">HEX</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="section">
+			<div class="centered-container">
+				<div class="hex">
+				    <div class="hex inner">
+				        <div class="hex inner2">
+				        	<div class="circle main">
+				        		<div class="circle inner">
+				        			<div class="equal main">
+				        				<div class="equal inner">
+				        					<div class="triangle triangle-left main">
+				        						<div class="triangle triangle-left inner"></div>
+				        					</div>
+				        					<div class="triangle triangle-right main">
+				        						<div class="triangle triangle-right inner"></div>
+				        					</div>
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	</html>	

@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+}
+
+.section {
+	z-index: -2;
+	text-align:center;
+	font-size: 3em;
+}	
+
+.fp-controlArrow.fp-prev{
+	border-color: transparent #111111 transparent transparent;
+}
+.fp-controlArrow.fp-next{
+	border-color: transparent transparent transparent #111111;
+}

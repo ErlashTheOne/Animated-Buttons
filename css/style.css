@@ -1,0 +1,220 @@
+/* Fichero style.scss*/
+/*BASE
+--------*/
+body {
+  padding: 0;
+  margin: 0; }
+
+* {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  box-sizing: border-box; }
+
+.title {
+  font-size: 40px; }
+  @media only screen and (max-width: 1024px) {
+    .title {
+      font-size: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .title {
+      font-size: 26px; } }
+
+.standard-text {
+  font-size: 20px; }
+  @media only screen and (max-width: 1024px) {
+    .standard-text {
+      font-size: 18px; } }
+  @media only screen and (max-width: 767px) {
+    .standard-text {
+      font-size: 16px; } }
+/*HEADER
+--------*/
+.header {
+  background-image: linear-gradient(180deg, transparent, transparent, transparent, rgba(255, 255, 255, 0.2));
+  box-shadow: 0 -10px 20px black;
+  padding: 10px 0;
+  vertical-align: middle;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  transition: all 0.5s;
+  /*HEADER -nav icon*/
+  /*HEADER -left*/
+  /*HEADER -right*/ }
+  .header .wrapper {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto; }
+    @media only screen and (max-width: 1200px) {
+      .header .wrapper {
+        max-width: 90%; }
+        .header .wrapper:after {
+          content: "";
+          display: table;
+          clear: both; } }
+  .header #nav-icon {
+    display: none;
+    width: 40px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    @media only screen and (max-width: 767px) {
+      .header #nav-icon {
+        display: block; } }
+    .header #nav-icon span {
+      display: block;
+      position: absolute;
+      height: 6px;
+      width: 100%;
+      background: white;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+      .header #nav-icon span:nth-child(1) {
+        top: 7px; }
+      .header #nav-icon span:nth-child(2), .header #nav-icon span:nth-child(3) {
+        top: 20px; }
+      .header #nav-icon span:nth-child(4) {
+        top: 33px; }
+    .header #nav-icon.open span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+    .header #nav-icon.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .header #nav-icon.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .header #nav-icon.open span:nth-child(4) {
+      top: 20px;
+      width: 0%;
+      left: 50%; }
+  .header .menu-left {
+    display: inline-block;
+    vertical-align: middle;
+    float: left; }
+    .header .menu-left img {
+      width: 50px; }
+  .header .menu-right {
+    display: inline-block;
+    vertical-align: middle;
+    float: right; }
+    .header .menu-right ul {
+      transition: 0.5s;
+      list-style: none;
+      display: inline-block; }
+      @media (max-width: 767px) {
+        .header .menu-right ul {
+          position: absolute;
+          right: -600px; }
+          .header .menu-right ul.open {
+            background: #4A7BFE;
+            right: 0px;
+            height: 100vh;
+            top: 0;
+            margin: 0;
+            padding: 60px 45px;
+            text-align: left;
+            line-height: 45px;
+            z-index: -1;
+            box-shadow: 4px 0px 20px black; } }
+    @media (min-width: 768px) {
+      .header .menu-right li {
+        display: inline-block;
+        padding-left: 10px; } }
+    .header .menu-right li a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      font-weight: bold; }
+      .header .menu-right li a:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 1px;
+        height: 0.2em;
+        width: 0;
+        background-color: #ffffff;
+        transition: 0.2s; }
+      .header .menu-right li a:hover:after, .header .menu-right li a.active:after {
+        width: 100%; }
+  .header-fixed {
+    background: white;
+    position: fixed; }
+    .header-fixed #nav-icon span {
+      background: black; }
+    .header-fixed .menu-right li a {
+      color: black; }
+      .header-fixed .menu-right li a:after {
+        background-color: black; }
+
+/*HERO
+--------*/
+.hero {
+  position: relative; }
+  .hero__background {
+    width: 100%;
+    height: 100vh;
+    min-height: 620px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important; }
+  .hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+    .hero__content .wrapper {
+      max-width: 1200px;
+      margin: auto; }
+      @media only screen and (max-width: 1200px) {
+        .hero__content .wrapper {
+          max-width: 90%; } }
+    .hero__content .contents {
+      float: left;
+      padding: 2%;
+      height: auto; }
+      @media only screen and (max-width: 767px) {
+        .hero__content .contents {
+          width: 100% !important;
+          display: block; } }
+      .hero__content .contents--left {
+        width: 40%; }
+        .hero__content .contents--left img {
+          width: 100%; }
+      .hero__content .contents--right {
+        width: 60%;
+        padding-bottom: calc(2% + 30px); }
+        .hero__content .contents--right .title {
+          margin: 30px 0;
+          color: white;
+          text-shadow: #000 1px 1px 12px; }
+        .hero__content .contents--right .standard-text {
+          margin-bottom: 50px;
+          color: white;
+          text-shadow: #000 1px 1px 4px; }
+
+#homePage .content {
+  height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */

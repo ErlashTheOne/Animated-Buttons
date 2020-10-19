@@ -1,0 +1,114 @@
+body {
+ overflow-x:hidden;
+}
+
+.animation-svg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 767px){
+	.animation-svg{
+		transform:inherit!important;
+		transform: translateX(-50%)!important;
+		top: initial;
+		bottom: 20%;
+		
+	}
+}
+polyline{
+	fill: none;
+	stroke-width: 16px;
+    stroke: #bad8ea;
+		stroke-linecap: round;
+}
+.line-poly {
+	opacity: 0;
+	stroke-dasharray: 4200;
+	stroke-dashoffset: 8400;
+	animation: animate 3s ease-in-out infinite, appear-disappear 3s 1.5s linear;
+}
+
+.line-poly2 {
+	opacity: 1;
+	stroke-dasharray: 5000;
+	stroke-dashoffset: -5000;
+	animation: animate 1.5s 4s ease-in-out, appear 1.5s 4s linear infinite, showed 1.5s 5.5s linear infinite;
+}
+.line-poly3 {
+	opacity: 1;
+	stroke-dasharray: 5000;
+	stroke-dashoffset: 5000;
+	animation: animate 1s 5.5s ease-in-out, appear 1s 5.5s linear infinite, showed 1s 6.5s linear infinite;
+}
+.line-poly4 {
+	opacity: 0;
+	stroke-dasharray: 5000;
+	stroke-dashoffset: -10000;
+	animation: animate 1.5s 3.5s ease-out infinite, appear-disappear 1.5s 4.5s linear;
+}
+
+.cls-1 {
+	fill: #fff;
+	stroke-width: 7px;
+}
+.cls-1, .cls-2 {
+	opacity: 0;
+	stroke: #bad8ea;
+	stroke-miterlimit: 10;
+}
+.cls-2 {
+	fill: none;
+	stroke-width: 4px;
+}
+
+.circle-poly {animation: appear-disappear 1.9s 1.6s linear;}
+.circle-poly2 {animation: appear-disappear 2.05s 1.7s linear;}
+.circle-poly3 {animation: appear-disappear 2s 1.8s linear;}
+.circle-poly4 {animation: appear-disappear 2s 2s linear;}
+.circle-poly5 {animation: appear-disappear 2s 2.1s linear;}
+.circle-poly6 {animation: appear-disappear 2s 2.2s linear;}
+.circle-poly7 {animation: appear-disappear 1.9s 2.3s linear;}
+
+@keyframes animate{
+	to {
+	    stroke-dashoffset: 0;
+	}
+}
+@keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	1% {
+	    opacity: 1;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+@keyframes appear-disappear{
+	0%{
+		opacity: 0;
+	}
+	1% {
+	    opacity: 1;
+	}
+	99% {
+	    opacity: 1;
+	}
+	100% {
+	    opacity: 0;
+	}
+
+}
+@keyframes showed{
+	0%{
+		opacity: 1;
+		stroke-dashoffset: 0;
+	}  
+	100% {
+	    opacity: 1;
+	    stroke-dashoffset: 0;
+	}
+}
